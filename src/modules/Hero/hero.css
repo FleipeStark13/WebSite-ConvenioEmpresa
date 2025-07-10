@@ -1,0 +1,81 @@
+.hero {
+	width: 100%;
+	padding: 10px;
+	color: white;
+	margin: 5em 0;
+}
+.hero button {
+	border-radius: 10px;
+	padding: 15px;
+	font-weight: 800;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+	border: none;
+	font-size: 20px;
+	background-color: #FFE100;
+	transition: 150ms linear;
+	color: #867600;
+}
+
+.left-content, .right-content {
+	flex:1;
+}
+
+.left-content {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.left-content figure {
+	width: 250px;
+	margin: 0;
+}
+.left-content img {
+	width: 100%;
+}
+
+#compreenda {
+	font-size: 20px;
+	font-weight: 800;
+}
+.hero h1 {
+	font-size: 100px;
+	line-height: 80%;
+	margin: 0;
+}
+
+.hero button:hover {
+	cursor: pointer;
+	background-color: #bea800;
+}
+.container-hero {
+	display: flex;
+	gap: 5em;
+	width: 90%;
+	margin: 0 auto;
+}
+.right-content figure {
+	margin: 0 auto;
+	width: 100%;
+}
+.right-content img {
+	width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+	.container-hero {
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+	}
+	.left-content figure {
+		margin: 0 auto;
+	}
+	.right-content figure {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.hero h1 {
+		font-size: 40px;
+	}
+}

@@ -1,0 +1,62 @@
+.cardLabel {
+	width: 320px;
+	border-radius: 20px;
+	border: 1.5px solid #E2E2E2;
+	background-color: white;
+	padding: 20px;
+}
+
+.cardLabel h1 {
+	color: #797979;
+	font-size: 30px;
+}
+.cardLabel p {
+	font-size: 15px;
+	color: #949494;
+}
+.cardLabel figure {
+	margin: 0;
+	padding: 20px;
+	width: 80px;
+	height: 80px;
+}
+
+.head-card-flex {
+	position: relative;
+	display: flex;
+	margin-bottom: 4em;
+	align-items: center;
+
+}
+
+.left-icon {
+	background-color: #007021;
+	border-radius: 0 20px 0 20px;
+}
+.right-icon {
+	background-color: #00D03F;
+	border-radius: 20px 0 20px 0;
+	z-index: 1;
+	transform: translateX(-40px) translateY(40px);
+	box-shadow: 0 0 20px rgba(0,0 ,0,.2);
+}
+
+.cardLabel img {
+	width: 100%;
+}
+
+.cardListed {
+	list-style: outside;
+}
+.cardListed li::marker {
+	color: #007021;
+	font-size: 15px;
+}
+
+.cardListed {
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	margin-top: 2em;
+	color: #424242;
+}

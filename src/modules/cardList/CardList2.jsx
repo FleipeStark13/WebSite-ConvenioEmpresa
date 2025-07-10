@@ -1,7 +1,7 @@
+import './cardList.css';
 import iconNeg from './iconNeg.png';
 import drogIconNeg from './iconNeg.png';
-import './cardList.css'
-export default function CardList ({title, description}){
+export default function CardList2 ({title, description, listItems}){
 	return (
 		<div className="cardLabel">
 			<div className="card">
@@ -26,10 +26,19 @@ export default function CardList ({title, description}){
 					<p>
 						{description}
 					</p>
+
+					<ul className='cardListed'>
+						{
+							listItems.map((item) => {
+								return(
+									<li>{item}</li>
+								)
+							})
+						}
+					</ul>
 				</div>
 			</div>
 		</div>
 	)
 
 }
-

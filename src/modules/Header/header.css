@@ -1,0 +1,54 @@
+header {
+	width: 90%;
+	background-color: white;
+	filter: drop-shadow(0 15px 18.6px rgba(0,0,0,0.2));
+	border-radius: 100px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	position: relative;
+	margin-top: 1.5em;
+
+	transition: position 1s ease-in-out;
+}
+header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 13px 25px;
+}
+
+header nav ul {
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	gap: 2em;
+	list-style: none;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #818181;
+}
+header nav a:hover {
+	color: #464646;
+}
+
+header nav figure {
+	width: 150px;
+	margin: 0;
+}
+
+header nav img {
+	width: 100%;
+}
+
+@media screen and (max-width:1025px) {
+	header nav ul {
+		display: none;
+	}	
+	header nav {
+		align-items: center;
+		justify-content: center;
+	}
+}

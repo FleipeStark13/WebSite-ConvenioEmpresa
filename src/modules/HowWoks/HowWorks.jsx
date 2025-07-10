@@ -1,5 +1,5 @@
 import CardList from "../cardList/CardList.jsx";
-
+import './howWorks.css'
 export default function HowWorks() {
 
 	const how_it_works = [
@@ -19,7 +19,7 @@ export default function HowWorks() {
 
 	return (
 		<div className="how-works">
-			<h1>Como funciona?</h1>
+			<h1 id="howWorksTitle">Como<br />funciona?</h1>
 
 			<ul>
 				{how_it_works.map((item, index) => {

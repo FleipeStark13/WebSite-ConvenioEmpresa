@@ -1,0 +1,36 @@
+.benefitLists {
+	padding: 20px;
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 7em;
+	padding-bottom: 7em;
+}
+.benefitLists ul {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	gap: 2em;
+	flex-wrap: wrap;
+}
+.benefitLists h1 { color: #4C4C4C; font-size: 25px; }
+.benefitLists p { color: #797979; font-size: 15px; }
+
+.benefitLists svg {
+	color: #009A2E;
+	font-size: 45px;
+}
+
+.benefitLists ul li {
+	flex: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.benefitLists {
+		width: 100%;
+	}
+	.benefitLists ul {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}
