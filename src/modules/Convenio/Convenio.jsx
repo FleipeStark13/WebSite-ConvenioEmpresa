@@ -1,6 +1,29 @@
-import './convenio.css';
+import './convenio.scss';
+import { useEffect, useRef } from 'react';
+
 export default function Convenio () {
-	
+
+	const ref = useRef();
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+		([entry]) => {
+			if (entry.isIntersecting) {
+			ref.current.classList.add('animate');
+			} else {
+			ref.current.classList.remove('animate'); // 👈 Remove ao sair da tela
+			}
+		},
+		{
+			threshold: 0.2, // Ativa quando 20% estiver visível
+		}
+		);
+
+		if (ref.current) observer.observe(ref.current);
+
+		return () => observer.disconnect();
+	}, []);
+
 	const como_usar = [
 		{
 			id: '1',
@@ -25,7 +48,7 @@ export default function Convenio () {
 	]
 	
 	return (
-		<div className="convenio">
+		<div className="convenio" ref={ref}>
 			<h1>Com usar o<br />convênio</h1>
 			<ul>
 				{

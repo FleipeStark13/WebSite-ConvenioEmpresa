@@ -1,7 +1,7 @@
 import iconNeg from './iconNeg.png';
 import drogIconNeg from './iconNeg.png';
 import './cardList.css'
-export default function CardList ({title, description}){
+export default function CardList ({title, description, firstIcon, secondIcon}){
 	return (
 		<div className="cardLabel">
 			<div className="card">
@@ -9,12 +9,12 @@ export default function CardList ({title, description}){
 					<div className="head-card-flex">
 						<div className="left-icon">
 							<figure>
-								<img src={iconNeg} alt="" />
+								<img src={firstIcon} alt="" />
 							</figure>
 						</div>
 						<div className="right-icon">
 							<figure>
-								<img src={drogIconNeg} alt="" />
+								<img src={secondIcon} alt="" />
 							</figure>
 						</div>
 					</div>

@@ -18,6 +18,7 @@
 
 .left-content, .right-content {
 	flex:1;
+	animation: animator 1s ease-in-out;
 }
 
 .left-content {
@@ -27,7 +28,7 @@
 }
 
 .left-content figure {
-	width: 250px;
+	width: 150px;
 	margin: 0;
 }
 .left-content img {
@@ -77,5 +78,17 @@
 	}
 	.hero h1 {
 		font-size: 40px;
+	}
+}
+
+@keyframes animator {
+	0% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: none;
+		opacity: 1;
 	}
 }

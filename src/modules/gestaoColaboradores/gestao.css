@@ -34,7 +34,6 @@
 .flexGestao {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: center;
 	gap: 3em;
 }
@@ -69,9 +68,9 @@
 }
 
 .gestaoColab svg {
-	font-size: 200px;
+	font-size: 100px;
 	width: 100%;
-	margin-top: 10px;
+	margin: 30px 0;
 }
 .inclusoes svg {
 	color: #009A2E;
@@ -88,7 +87,7 @@
 	text-align: center;
 }
 .headExclusoes{
-	background-color: #FFC300;
+	background-color: #008533;
 	text-align: center;
 	color: white;
 }
@@ -107,20 +106,23 @@
 }
 
 .gestaoAlert {
-	margin: 0 auto;
-	margin-top: 2em;
+	width: 100%;
+	padding: 20px;
+}
+
+.containerGestao {
+	border-radius: 10px;
 	width: fit-content;
-	padding: 0 5em;
-	border-radius: 20px;
-	display: flex;
-	gap: 2em;
-	align-items: center;
-	background-color: #00561A;
+	margin: 0 auto;
 	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .gestaoAlert svg {
 	width: fit-content;
-	font-size: 50px;
+	font-size: 30px;
+	margin: 0;
 }
 .contentAlert {
 	font-size: 12px;

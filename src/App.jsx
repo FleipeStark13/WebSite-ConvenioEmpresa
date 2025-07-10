@@ -6,13 +6,15 @@ import PaymentWorks from './modules/howPaymentWorks/PaymentWorks';
 import GestaoColab from './modules/gestaoColaboradores/GestaoColab';
 import Convenio from './modules/Convenio/Convenio';
 import OptionsBenefits from './modules/optionsBenefits/OptionsBenefits';
-import Cta from './modules/cta/Cta'
+import Cta from './modules/cta/Cta';
+import BackToTop from './modules/_handlers/BackToTop';
 import './App.css';
 
 function App() {
   return (
 	  <div className="App">
 		<Header></Header>
+		<BackToTop></BackToTop>
 		<main>
 			<section>
 				<HeroBanner></HeroBanner>

@@ -1,6 +1,29 @@
-import './options.css';
+import './options.scss';
+import { useEffect, useRef } from 'react';
+
 import CardList2 from '../cardList/CardList2';
 export default function OptionsBenefits () {
+	
+	const ref = useRef();
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+		([entry]) => {
+			if (entry.isIntersecting) {
+			ref.current.classList.add('animate');
+			} else {
+			ref.current.classList.remove('animate'); // 👈 Remove ao sair da tela
+			}
+		},
+		{
+			threshold: 0.2, // Ativa quando 20% estiver visível
+		}
+		);
+
+		if (ref.current) observer.observe(ref.current);
+
+		return () => observer.disconnect();
+	}, []);
 	
 	const benefits1 = [
 		'A cada compra, o valor é debitado do saldo disponível.',
@@ -19,7 +42,7 @@ export default function OptionsBenefits () {
 	]
 	
 	return (
-		<div className="optionsBenefits">
+		<div className="optionsBenefits" ref={ref}>
 
 			<h1 id='titleOptions'>Opções de<br />Benefícios</h1>
 

@@ -36,10 +36,12 @@ export default function GestaoColab () {
 			</div>
 
 			<div className="gestaoAlert">
-				<AiOutlineCalendar />
-				<div className="contentAlert">
-					<h2>Início do uso:</h2>
-					<p>Após contrato assinado em até 3 dia uteis.</p>
+				<div className="containerGestao">
+					<AiOutlineCalendar />
+					<div className="contentAlert">
+						<h2>Início do uso:</h2>
+						<p>Após contrato assinado em até 3 dia uteis.</p>
+					</div>
 				</div>
 			</div>
 

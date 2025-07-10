@@ -1,6 +1,9 @@
 import pinheiros from './Pinheiros.webp';
-import './hero.css'
-import logoNeg from './logoNeg.png'
+import './hero.css';
+
+
+import logoNeg from './logoNeg.png';
+import logoNegDrog from './logoNegDrog.png';
 export default function HeroBanner () {
 	return (
 		<div className="hero">
@@ -15,9 +18,14 @@ export default function HeroBanner () {
 							CONHECER BENEFÍCIOS
 						</button>
 					</a>
-					<figure>
-						<img src={logoNeg} alt="" />
-					</figure>
+					<div className="flexLogos" style={{display: 'flex', gap: 20}}>
+						<figure>
+							<img src={logoNeg} alt="" />
+						</figure>
+						<figure>
+							<img src={logoNegDrog} alt="" />
+						</figure>
+					</div>
 
 
 				</div>

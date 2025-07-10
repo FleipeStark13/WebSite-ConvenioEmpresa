@@ -1,0 +1,52 @@
+.optionsBenefits {
+	padding: 20px;
+	padding-top: 5em;
+}
+.optionsBenefits ul {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+	align-items: center;
+	justify-content: center;
+}
+.optionsBenefits li {
+	padding: 10px;
+}
+#titleOptions {
+	font-size: 70px;
+	color: #009A2E;
+	text-align: center;
+}
+
+@media screen and (max-width:1025px) {
+	#titleOptions {
+		font-size: 40px !important;
+		text-align: center;
+	}	
+}
+
+.optionsBenefits ul{
+	opacity: 0;
+}
+
+.optionsBenefits.animate ul  {
+	animation: showd 500ms ease forwards;
+}
+
+@for $i from 1 through 2 {
+	.optionsBenefits.animate ul:nth-child(#{$i}) {
+		animation-delay: #{($i - 1) * 500}ms;
+	}
+}
+
+@keyframes showd {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

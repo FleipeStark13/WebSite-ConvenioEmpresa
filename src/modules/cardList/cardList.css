@@ -1,5 +1,5 @@
 .cardLabel {
-	width: 320px;
+	width: 420px;
 	border-radius: 20px;
 	border: 1.5px solid #E2E2E2;
 	background-color: white;
@@ -59,4 +59,5 @@
 	font-size: 12px;
 	margin-top: 2em;
 	color: #424242;
+	margin: 20px;
 }

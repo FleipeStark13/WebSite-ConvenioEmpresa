@@ -21,7 +21,31 @@
 }
 
 .benefitLists ul li {
+	opacity: 0;
+	transform: translateY(20px);
 	flex: 1;
+	transition: all 0.5s ease;
+}
+
+.benefitLists.animate ul li {
+	animation: showd 500ms ease forwards;
+}
+
+@for $i from 1 through 10 {
+	.benefitLists.animate ul li:nth-child(#{$i}) {
+		animation-delay: #{($i - 1) * 200}ms;
+	}
+}
+
+@keyframes showd {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 
