@@ -23,7 +23,7 @@ export default function Cta () {
 						</li>
 						<li>
 							<CiMail></CiMail>
-							<a href="mailto:clecia.souza@coocerqui.com.br">clecia.souza@coocerqui.com.br</a>
+							<a href="mailto:marketing@coocerqui.com.br">marketing@coocerqui.com.br</a>
 						</li>
 						<li>
 							<CiMail></CiMail>
